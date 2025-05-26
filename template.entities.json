@@ -1,0 +1,29 @@
+{
+    "entities": 
+    [
+        {
+            "name": "Entity 1",
+            "queries": 
+                [
+                    {
+                        "label": "Check domain dhash",
+                        "query": "entity:domain main_icon_dhash:your_icon_dhash NOT parent_domain:your_domain"
+                    }
+                ]
+        },
+        {
+            "name": "Entity 2",
+            "queries": 
+                [
+                    {
+                        "label": "Check domain dhash",
+                        "query": "entity:domain main_icon_dhash:your_icon_dhash NOT parent_domain:your_domain"
+                    }, 
+                    {
+                        "label": "Check typosquatted domains",
+                        "query": "entity:domain fuzzy_domain:your_domain NOT parent_domain:you_domain last_update_date:2020-01-01+ p:1+"
+                    }
+                ]
+        }
+    ]
+}
