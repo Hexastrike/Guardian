@@ -1,6 +1,8 @@
 # Guardian - Automated VirusTotal Threat Hunting
 
-Guardian is a compact, self-contained command-line tool that transforms a single JSON rule file into a VirusTotal hunting pipeline. The JSON file groups one or more “entities”, for example customers or internal business units, with the VirusTotal search strings you want to run for each of them. On every execution Guardian reads the file, issues the searches, deduplicates the results, and records any new findings in an embedded SQLite database. Because it stores only the delta, each run is quick and idempotent. An empty Notification stub is already in place so you can wire the pipeline into Slack, Microsoft Teams, email, or any other alert system without changing the core code. Designed to stay out of your way, Guardian fits naturally into a daily cron job, a CI stage, or an ad-hoc batch investigation.
+Guardian is a compact, self-contained command-line tool that transforms a single JSON rule file into a VirusTotal hunting pipeline. The JSON file groups one or more “entities”, for example customers or internal business units, with the VirusTotal search strings you want to run for each of them. On every execution Guardian reads the file, issues the searches, deduplicates the results, and records any new findings in an embedded SQLite database. Because it stores only the delta, each run is quick and idempotent. 
+
+An empty Notification stub is already in place so you can wire the pipeline into Slack, Microsoft Teams, email, or any other alert system without changing the core code. Designed to stay out of your way, Guardian fits naturally into a daily cron job, a CI stage, or an ad-hoc batch investigation.
 
 ## Demo
 
